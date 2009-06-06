@@ -11,9 +11,11 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Mixin/%{upstream_name}-%{upstream_version}.tar.gz
 
-
+BuildRequires: perl(Mixin::ExtraFields)
+BuildRequires: perl(Sub::Exporter)
+BuildRequires: perl(Test::More)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module mixes in to your class to provide a 'param' method like the
