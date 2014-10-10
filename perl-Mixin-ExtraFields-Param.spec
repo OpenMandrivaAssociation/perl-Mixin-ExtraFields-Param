@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 
 Summary:	Make your class provide a familiar "param" method
 License:	GPL+ or Artistic
