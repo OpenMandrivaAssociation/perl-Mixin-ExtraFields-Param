@@ -1,15 +1,13 @@
 %define upstream_name    Mixin-ExtraFields-Param
-%define upstream_version 0.022
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.022
+Release:	2
 
 Summary:	Make your class provide a familiar "param" method
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rjbs/Mixin-ExtraFields-Param
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Mixin-ExtraFields-Param-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Mixin-ExtraFields-Param-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +27,7 @@ By default, the methods provided are:
 * * param
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
